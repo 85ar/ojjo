@@ -35,10 +35,12 @@
   justify-content: space-between
   margin-bottom: 30px
   &__link
-    &:first-child::after
-      background-color: red
-      // border: 3px solid #FFFFFF
-    // transform: rotate(90deg)
+    &:not(:last-child)
+      &:after
+        content: ''
+        border: 1px solid #FFFFFF
+        transform: rotate(90deg)
+
 
   &__item
     width: 160px
