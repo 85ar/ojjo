@@ -2,7 +2,8 @@
   background: url(../img/header-image.jpg)
   background-size: cover
   background-position: center
-  min-height: 950px
+  padding-bottom: 1px
+  // min-height: 950px
   &__wrapper
     max-width: 1110px
     display: flex
@@ -30,22 +31,25 @@
   &__line
     border: 1px solid #FFFFFF
     margin-bottom: 30px
+  &-catalog
+    background-image: none
+.container
+  &-catalog
+    min-width: 100%
+    background: #333333
 .brands
   display: flex
   justify-content: space-between
   margin-bottom: 30px
-  &__link
-    &:not(:last-child)
-      &:after
-        content: ''
-        border: 1px solid #FFFFFF
-        transform: rotate(90deg)
-
-
+  &__link::last-child
+    &::after
+      border-right: 1px solid red
   &__item
     width: 160px
     height: 60px
-
+  &__link
+    border-right: 1px solid #FFFFFF
+    padding-right: 15px
 .navbar
   padding-top: 25px
   padding-bottom: 523px
@@ -59,6 +63,11 @@
     display: flex
     align-items: center
     justify-content: space-between
+  &-catalog
+    padding-top: 27px
+    padding-bottom: 31px
+    margin: auto
+    max-width: 1110px
 .search
   &__title
     font-family: Gilroy-Regular

@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OJJO - ювелирный магазин</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style2.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <div class="header__wrapper navbar">
+    <header class="header header-catalog">
+      <div class="container container-catalog">
+        <div class="header__wrapper navbar navbar-catalog">
           <nav class="navbar__menu menu">
             <ul class="menu__list">
               <li class="menu__item">
@@ -34,7 +34,9 @@
             <span class="search__title">Поиск</span>
           </a>
           <div class="navbar__accountLinks accounts">
-            <button class="accounts__login" type="submit">Вход/Регистрация</button>
+            <button class="accounts__login" type="submit">
+              Вход/Регистрация
+            </button>
             <a href="#" class="accounts__link">
               <svg width="24" height="24" class="accounts__icon">
                 <use xlink:href="img/icons.svg#mdi_account"></use>
@@ -49,200 +51,20 @@
           <!-- /accounts -->
         </div>
         <!-- /navbar -->
-        <h1 class="header__title">Долго, дорого, богато!</h1>
-        <form action="/catalog.html" class="header__form">
-          <button class="header__button" type="submit">каталог изделий</button>
-        </form>
-
-        <div class="header__line"></div>
-        <div class="header__brands brands">
-          <a href="#" class="brands__link">
-            <img src="img/brands-item.png" alt="item" class="brands__item" />
-          </a>
-          <a href="#" class="brands__link">
-            <img src="img/brands-item.png" alt="item" class="brands__item" />
-          </a>
-          <a href="#" class="brands__link">
-            <img src="img/brands-item.png" alt="item" class="brands__item" />
-          </a>
-          <a href="#" class="brands__link">
-            <img src="img/brands-item.png" alt="item" class="brands__item" />
-          </a>
-          <a href="#" class="brands__link">
-            <img src="img/brands-item.png" alt="item" class="brands__item" />
-          </a>
-          <a href="#" class="brands__link">
-            <img src="img/brands-item.png" alt="item" class="brands__item" />
-          </a>
-        </div>
-        <!-- /brands -->
       </div>
       <!-- /container -->
     </header>
-    <section class="categories">
+    <section class="products">
       <div class="container">
-        <h3 class="categories__subtitle">К мероприятиям</h3>
-        <h2 class="categories__title">Настоящая красота здесь!</h2>
-        <div class="categories__list categories-list">
-          <button class="categories-list__item">Свадьба</button>
-          <button class="categories-list__item">Мужу</button>
-          <button class="categories-list__item">Жене</button>
-          <button class="categories-list__item">Партнеру</button>
-          <button class="categories-list__item">Коллекции</button>
-          <button class="categories-list__item">Редкость</button>
+        <div class="products__filter products-filter">
+          <select>
+            <option>Пункт 1</option>
+            <option>Пункт 2</option>
+          </select>
         </div>
-        <!-- /categories-list -->
-        <div class="categories__catalog catalog">
-          <a href="#" class="catalog__link">
-            <img
-              src="img/catalog-item-1.png"
-              alt="item"
-              class="catalog__item"
-            />
-          </a>
-          <a href="#" class="catalog__link">
-            <img
-              src="img/catalog-item-2.png"
-              alt="item"
-              class="catalog__item"
-            />
-          </a>
-          <a href="#" class="catalog__link">
-            <img
-              src="img/catalog-item-3.png"
-              alt="item"
-              class="catalog__item"
-            />
-          </a>
-          <a href="#" class="catalog__link">
-            <img
-              src="img/catalog-item-4.png"
-              alt="item"
-              class="catalog__item"
-            />
-          </a>
-          <a href="#" class="catalog__link">
-            <img
-              src="img/catalog-item-5.png"
-              alt="item"
-              class="catalog__item"
-            />
-          </a>
-          <a href="#" class="catalog__link">
-            <img
-              src="img/catalog-item-6.png"
-              alt="item"
-              class="catalog__item"
-            />
-          </a>
-        </div>
-        <!-- /catalog -->
-      </div>
-      <!-- /container -->
-    </section>
-    <!-- /.categories -->
-    <section class="salon">
-      <div class="container">
-        <h3 class="salon__subtitle">Не знаете, что выбрать?</h3>
-        <h2 class="salon__title">Посетите наши салоны в Москве</h2>
-        <p class="salon__description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut duis
-          tortor vitae pellentesque egestas quam pulvinar. Pellentesque
-          porttitor velit sit pellentesque. Suspendisse donec pretium id
-          dignissim. Dignissim ultrices eget orci viverra. Egestas quis et ut
-          ultrices imperdiet lectus nulla tempus. Pharetra lorem sem purus nisi
-          libero viverra ipsum.
-        </p>
-        <button class="salon__button">наши салоны</button>
       </div>
     </section>
-    <!-- /salon -->
-    <section class="blog">
-      <div class="container">
-        <h3 class="blog__subtitle">Полезные статьи</h3>
-        <h2 class="blog__title">Лучшие советы по подбору дорогих подарков</h2>
-        <div class="blog__cards blog-card">
-          <a href="#" class="blog-card__link">
-            <img
-              src="img/blog__item-1.png"
-              alt="blog"
-              class="blog-card__item"
-            />
-          </a>
-          <a href="#" class="blog-card__link">
-            <img
-              src="img/blog__item-2.png"
-              alt="blog"
-              class="blog-card__item"
-            />
-          </a>
-          <a href="#" class="blog-card__link">
-            <img
-              src="img/blog__item-3.png"
-              alt="blog"
-              class="blog-card__item"
-            />
-          </a>
-        </div>
-        <!-- /card -->
-        <button class="blog__button">читать наш блог</button>
-      </div>
-      <!-- /container -->
-    </section>
-    <!-- /blog -->
-    <section class="gallery">
-      <div class="container">
-        <h3 class="gallery__subtitle">#ojjo_jewerly</h3>
-        <h2 class="gallery__title">Мы в социальных сетях</h2>
-        <div class="gallery__cards">
-          <a href="#" class="gallery__link">
-            <img
-              src="img/gallery__item-1.png"
-              alt="gallery"
-              class="gallery__item"
-            />
-          </a>
-          <a href="#" class="gallery__link">
-            <img
-              src="img/gallery__item-2.png"
-              alt="gallery"
-              class="gallery__item"
-            />
-          </a>
-          <a href="#" class="gallery__link">
-            <img
-              src="img/gallery__item-3.png"
-              alt="gallery"
-              class="gallery__item"
-            />
-          </a>
-          <a href="#" class="gallery__link">
-            <img
-              src="img/gallery__item-4.png"
-              alt="gallery"
-              class="gallery__item"
-            />
-          </a>
-          <a href="#" class="gallery__link">
-            <img
-              src="img/gallery__item-5.png"
-              alt="gallery"
-              class="gallery__item"
-            />
-          </a>
-          <a href="#" class="gallery__link">
-            <img
-              src="img/gallery__item-6.png"
-              alt="gallery"
-              class="gallery__item"
-            />
-          </a>
-        </div>
-        <!-- /card -->
-      </div>
-      <!-- /container -->
-    </section>
-    <!-- /gallery -->
+    <!-- /.products -->
     <section class="subscribe">
       <div class="container">
         <h3 class="subscribe__subtitle">
@@ -421,13 +243,19 @@
           <!-- /footer-social -->
         </div>
         <!-- /footer-link -->
-     <div class="footer__line footer-line"></div>
-     <div class="footer__last-line last-line">
-      <span class="last-line__copyright">(c) 2020 OJJO jewelry</span>
-      <a href="#" class="last-line__agrement last-line__links">Договор публичной офферты</a>
-      <a href="#" class="last-line__agents last-line__links">Контрагентам</a>
-      <a href="#" class="last-line__figma last-line__links">Сделано Figma.info</a>
-     </div>
+        <div class="footer__line footer-line"></div>
+        <div class="footer__last-line last-line">
+          <span class="last-line__copyright">(c) 2020 OJJO jewelry</span>
+          <a href="#" class="last-line__agrement last-line__links"
+            >Договор публичной офферты</a
+          >
+          <a href="#" class="last-line__agents last-line__links"
+            >Контрагентам</a
+          >
+          <a href="#" class="last-line__figma last-line__links"
+            >Сделано Figma.info</a
+          >
+        </div>
       </div>
       <!-- /container -->
     </footer>
